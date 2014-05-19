@@ -4,7 +4,7 @@ Currently under construction!
 
 ### Installation
 
-Include [`ChatCommands.php`](https://github.com/Teddy95/ChatCommands/src/ChatCommands.php) and search the messages for commands.
+Include [`ChatCommands.php`](https://github.com/Teddy95/ChatCommands/blob/master/src/ChatCommands.php) and search the messages for commands.
 
 ```php
 <?php
