@@ -1,6 +1,11 @@
 # ChatCommands
 
-Currently under construction!
+ChatCommands is a simple php chat command system.
+
+- Use commands in your chat
+- Easy to use
+
+You can also use this tool for command lines or browser games, for example.
 
 ### Installation
 
