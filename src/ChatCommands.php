@@ -59,6 +59,16 @@ class cmd
 	}
 
 	/**
+	 * @return array	Returns a string with the command character
+	 */
+	public static function get_character ()
+	{
+
+		return self::$commandCharacter;
+		
+	}
+
+	/**
 	 * @param array		$commands
 	 *
 	 * @return array	Returns FALSE on failure
@@ -73,6 +83,16 @@ class cmd
 		} else {
 			return false;
 		}
+		
+	}
+
+	/**
+	 * @return array	Returns an array with the commands on success or FALSE on failure
+	 */
+	public static function get_commands ()
+	{
+
+		return self::$commands;
 		
 	}
 
@@ -103,10 +123,11 @@ class cmd
 
 	/**
 	 * @param string	$msg
+	 * @param string	$text_split
 	 *
 	 * @return array	Returns an array with the active command on success or FALSE on failure
 	 */
-	public static function get ($msg)
+	public static function get ($msg, $text_split = false)
 	{
 
 		if (isset($msg) === true && substr($msg, 0, strlen(self::$commandCharacter)) == self::$commandCharacter && self::$commands !== false) {
@@ -125,7 +146,16 @@ class cmd
 
 			if (strpos($msg, ' ') == true) {
 				$msg = explode(' ', $msg, 2);
-				$get['text'] = $msg[1];
+
+				if (isset($text_split) === true && is_null($text_split) == false && $text_split !== false && strpos($msg[1], $text_split) == true) {
+					$get['text'] = explode($text_split, $msg[1]);
+
+					for ($i = 0; $i < count($get['text']); $i++) {
+						$get['text'][$i] = trim($get['text'][$i]);
+					}
+				} else {
+					$get['text'] = $msg[1];
+				}
 			} else {
 				$msg .= ' #';
 				$msg = explode(' ', $msg, 2);
@@ -163,6 +193,8 @@ class cmd
 		} else {
 			return false;
 		}
+
+		return;
 		
 	}
 
@@ -189,6 +221,8 @@ class cmd
 		} else {
 			return false;
 		}
+
+		return;
 		
 	}
 
@@ -202,9 +236,19 @@ class cmd
 
 		if (isset($command) === true && is_array(self::$commands) == true && in_array($command, self::$commands) == true) {
 			unset(self::$commands[array_search($command, self::$commands)]);
+			$i = 0;
+			$newCommands = array();
+
+			foreach (self::$commands as $command) {
+				$newCommands[] = $command;
+			}
+
+			self::$commands = $newCommands;
 		} else {
 			return false;
 		}
+
+		return;
 		
 	}
 
@@ -224,9 +268,20 @@ class cmd
 					return false;
 				}
 			}
+
+			$i = 0;
+			$newCommands = array();
+
+			foreach (self::$commands as $command) {
+				$newCommands[] = $command;
+			}
+
+			self::$commands = $newCommands;
 		} else {
 			return false;
 		}
+
+		return;
 		
 	}
 	
