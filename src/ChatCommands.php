@@ -145,6 +145,90 @@ class cmd
 		}
 		
 	}
+
+	/**
+	 * @param string	$command
+	 *
+	 * @return array	Returns FALSE on failure
+	 */
+	public static function add_command ($command)
+	{
+
+		if (isset($command) === true && in_array($command, self::$commands) == false) {
+			if (self::$commands === false) {
+				self::$commands = array();
+			}
+
+			self::$commands[] = $command;
+		} else {
+			return false;
+		}
+		
+	}
+
+	/**
+	 * @param array		$commands
+	 *
+	 * @return array	Returns FALSE on failure
+	 */
+	public static function add_commands ($commands)
+	{
+
+		if (isset($commands) === true) {
+			if (self::$commands === false) {
+				self::$commands = array();
+			}
+
+			foreach ($commands as $command) {
+				if (in_array($command, self::$commands) == false) {
+					self::$commands[] = $command;
+				} else {
+					return false;
+				}
+			}
+		} else {
+			return false;
+		}
+		
+	}
+
+	/**
+	 * @param string	$command
+	 *
+	 * @return array	Returns FALSE on failure
+	 */
+	public static function remove_command ($command)
+	{
+
+		if (isset($command) === true && is_array(self::$commands) == true && in_array($command, self::$commands) == true) {
+			unset(self::$commands[array_search($command, self::$commands)]);
+		} else {
+			return false;
+		}
+		
+	}
+
+	/**
+	 * @param array		$commands
+	 *
+	 * @return array	Returns FALSE on failure
+	 */
+	public static function remove_commands ($commands)
+	{
+
+		if (isset($commands) === true && is_array(self::$commands) == true) {
+			foreach ($commands as $command) {
+				if (in_array($command, self::$commands) == true) {
+					unset(self::$commands[array_search($command, self::$commands)]);
+				} else {
+					return false;
+				}
+			}
+		} else {
+			return false;
+		}
+		
+	}
 	
 }
 ?>
