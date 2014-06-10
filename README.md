@@ -1,6 +1,13 @@
 # ChatCommands
 
-ChatCommands is a simple php chat command system.
+<p align="center">
+	<img src="http://root.andre-sieverding.de/briefkasten/GithubRepoLogos/ChatCommands.png" alt="">
+	<p align="center">ChatCommands is a simple php chat command system.</p>
+</p>
+
+-------------
+
+### Benefits
 
 - Use commands in your chat
 - Easy to use
