@@ -26,7 +26,7 @@
  * SOFTWARE.
  */
 
-namespace Teddy95\ChatCommands;
+namespace ChatCommands;
 
 /**
  * Command class
