@@ -31,7 +31,7 @@ namespace ChatCommands;
 /**
  * Command class
  */
-class class
+class lib
 {
 
 	/**
