@@ -43,6 +43,10 @@ class cmd
 	/**
 	 * @param string	$character
 	 *
+	 * @access public
+	 *
+	 * @uses			$commandCharacter
+	 *
 	 * @return array	Returns FALSE on failure
 	 */
 	public static function set_character ($character = '/')
@@ -59,6 +63,10 @@ class cmd
 	}
 
 	/**
+	 * @access public
+	 *
+	 * @uses			$commandCharacter
+	 *
 	 * @return array	Returns a string with the command character
 	 */
 	public static function get_character ()
@@ -70,6 +78,10 @@ class cmd
 
 	/**
 	 * @param array		$commands
+	 *
+	 * @access public
+	 *
+	 * @uses			$commands
 	 *
 	 * @return array	Returns FALSE on failure
 	 */
@@ -87,6 +99,10 @@ class cmd
 	}
 
 	/**
+	 * @access public
+	 *
+	 * @uses			$commands
+	 *
 	 * @return array	Returns an array with the commands on success or FALSE on failure
 	 */
 	public static function get_commands ()
@@ -99,6 +115,10 @@ class cmd
 	/**
 	 * @param string	$command
 	 * @param string	$msg
+	 *
+	 * @access public
+	 *
+	 * @uses			$commandCharacter
 	 *
 	 * @return array	Returns TRUE on success or FALSE on failure
 	 */
@@ -124,6 +144,11 @@ class cmd
 	/**
 	 * @param string	$msg
 	 * @param string	$text_split
+	 *
+	 * @access public
+	 *
+	 * @uses			$commandCharacter
+	 * @uses			$commands
 	 *
 	 * @return array	Returns an array with the active command on success or FALSE on failure
 	 */
@@ -179,6 +204,10 @@ class cmd
 	/**
 	 * @param string	$command
 	 *
+	 * @access public
+	 *
+	 * @uses			$commands
+	 *
 	 * @return array	Returns FALSE on failure
 	 */
 	public static function add_command ($command)
@@ -200,6 +229,10 @@ class cmd
 
 	/**
 	 * @param array		$commands
+	 *
+	 * @access public
+	 *
+	 * @uses			$commands
 	 *
 	 * @return array	Returns FALSE on failure
 	 */
@@ -229,6 +262,10 @@ class cmd
 	/**
 	 * @param string	$command
 	 *
+	 * @access public
+	 *
+	 * @uses			$commands
+	 *
 	 * @return array	Returns FALSE on failure
 	 */
 	public static function remove_command ($command)
@@ -254,6 +291,10 @@ class cmd
 
 	/**
 	 * @param array		$commands
+	 *
+	 * @access public
+	 *
+	 * @uses			$commands
 	 *
 	 * @return array	Returns FALSE on failure
 	 */
