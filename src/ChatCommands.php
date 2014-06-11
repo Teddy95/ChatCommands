@@ -46,8 +46,31 @@ class cmd
 	 * @access public
 	 *
 	 * @uses			$commandCharacter
+	 * @uses			$commands
+	 */
+	public function __construct ($character = '/', $commands = false)
+	{
+
+		if (isset($character) === true) {
+			self::$commandCharacter = $character;
+		}
+
+		if (isset($commands) === true && is_array($commands) === true) {
+			self::$commands = $commands;
+		}
+
+		return;
+		
+	}
+
+	/**
+	 * @param string	$character
 	 *
-	 * @return array	Returns FALSE on failure
+	 * @access public
+	 *
+	 * @uses			$commandCharacter
+	 *
+	 * @return bool		Returns FALSE on failure
 	 */
 	public static function set_character ($character = '/')
 	{
@@ -67,7 +90,7 @@ class cmd
 	 *
 	 * @uses			$commandCharacter
 	 *
-	 * @return array	Returns a string with the command character
+	 * @return string	Returns a string with the command character
 	 */
 	public static function get_character ()
 	{
@@ -83,7 +106,7 @@ class cmd
 	 *
 	 * @uses			$commands
 	 *
-	 * @return array	Returns FALSE on failure
+	 * @return bool		Returns FALSE on failure
 	 */
 	public static function set_commands ($commands)
 	{
@@ -120,7 +143,7 @@ class cmd
 	 *
 	 * @uses			$commandCharacter
 	 *
-	 * @return array	Returns TRUE on success or FALSE on failure
+	 * @return bool		Returns TRUE on success or FALSE on failure
 	 */
 	public static function check ($command, $msg)
 	{
@@ -208,7 +231,7 @@ class cmd
 	 *
 	 * @uses			$commands
 	 *
-	 * @return array	Returns FALSE on failure
+	 * @return bool		Returns FALSE on failure
 	 */
 	public static function add_command ($command)
 	{
@@ -234,7 +257,7 @@ class cmd
 	 *
 	 * @uses			$commands
 	 *
-	 * @return array	Returns FALSE on failure
+	 * @return bool		Returns FALSE on failure
 	 */
 	public static function add_commands ($commands)
 	{
@@ -266,7 +289,7 @@ class cmd
 	 *
 	 * @uses			$commands
 	 *
-	 * @return array	Returns FALSE on failure
+	 * @return bool		Returns FALSE on failure
 	 */
 	public static function remove_command ($command)
 	{
@@ -296,7 +319,7 @@ class cmd
 	 *
 	 * @uses			$commands
 	 *
-	 * @return array	Returns FALSE on failure
+	 * @return bool		Returns FALSE on failure
 	 */
 	public static function remove_commands ($commands)
 	{
