@@ -1,5 +1,9 @@
 # Changelog
 
+### Version 0.5.0 - 12.06.2014
+
+- Change class `cmd` to `main`
+
 ### Version 0.4.0 - 11.06.2014
 
 - Change namespace Teddy95\ChatCommands to ChatCommands
