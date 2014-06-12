@@ -57,7 +57,7 @@ Text and Duration are optional!
 ### Download
 
 - [Releases on Github](https://github.com/Teddy95/ChatCommands/releases)
-- **[Download latest version from Github](https://github.com/Teddy95/ChatCommands/archive/v0.3.0.zip)**
+- **[Download latest version from Github](https://github.com/Teddy95/ChatCommands/archive/v0.5.0.zip)**
 - [Download master from Github](https://github.com/Teddy95/ChatCommands/archive/master.zip)
 
 -------------
