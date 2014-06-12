@@ -24,9 +24,9 @@ Include [`ChatCommands.php`](https://github.com/Teddy95/ChatCommands/blob/master
 
 	$chatMessage = '/afk*180 make coffee';
 
-	Teddy95\ChatCommands\cmd::set_character('/'); // Character that initiates the command
-	Teddy95\ChatCommands\cmd::set_commands(array('afk', 'dnd', 'lock')); // Commands
-	$commandInfo = Teddy95\ChatCommands\cmd::get($chatMessage);
+	ChatCommands\main::set_character('/'); // Character that initiates the command
+	ChatCommands\main::set_commands(array('afk', 'dnd', 'lock')); // Commands
+	$commandInfo = ChatCommands\main::get($chatMessage);
 
 	print_r($commandInfo);
 ?>
