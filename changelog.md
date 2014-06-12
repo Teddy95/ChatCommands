@@ -6,7 +6,7 @@
 
 ### Version 0.4.0 - 11.06.2014
 
-- Change namespace Teddy95\ChatCommands to ChatCommands
+- Change namespace `Teddy95\ChatCommands` to `ChatCommands`
 
 ### Version 0.3.0 - 21.05.2014
 
