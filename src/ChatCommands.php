@@ -47,6 +47,8 @@ class main
 	 *
 	 * @uses			$commandCharacter
 	 * @uses			$commands
+	 *
+	 * @return void
 	 */
 	public function __construct ($character = '/', $commands = false)
 	{
