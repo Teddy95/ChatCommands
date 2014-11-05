@@ -45,8 +45,8 @@ class main
 	 *
 	 * @access public
 	 *
-	 * @uses			$commandCharacter
-	 * @uses			$commands
+	 * @uses		$commandCharacter
+	 * @uses		$commands
 	 *
 	 * @return void
 	 */
@@ -70,7 +70,7 @@ class main
 	 *
 	 * @access public
 	 *
-	 * @uses			$commandCharacter
+	 * @uses		$commandCharacter
 	 *
 	 * @return bool		Returns FALSE on failure
 	 */
@@ -90,7 +90,7 @@ class main
 	/**
 	 * @access public
 	 *
-	 * @uses			$commandCharacter
+	 * @uses		$commandCharacter
 	 *
 	 * @return string	Returns a string with the command character
 	 */
@@ -106,7 +106,7 @@ class main
 	 *
 	 * @access public
 	 *
-	 * @uses			$commands
+	 * @uses		$commands
 	 *
 	 * @return bool		Returns FALSE on failure
 	 */
@@ -126,7 +126,7 @@ class main
 	/**
 	 * @access public
 	 *
-	 * @uses			$commands
+	 * @uses		$commands
 	 *
 	 * @return array	Returns an array with the commands on success or FALSE on failure
 	 */
@@ -143,7 +143,7 @@ class main
 	 *
 	 * @access public
 	 *
-	 * @uses			$commandCharacter
+	 * @uses		$commandCharacter
 	 *
 	 * @return bool		Returns TRUE on success or FALSE on failure
 	 */
@@ -172,8 +172,8 @@ class main
 	 *
 	 * @access public
 	 *
-	 * @uses			$commandCharacter
-	 * @uses			$commands
+	 * @uses		$commandCharacter
+	 * @uses		$commands
 	 *
 	 * @return array	Returns an array with the active command on success or FALSE on failure
 	 */
@@ -231,7 +231,7 @@ class main
 	 *
 	 * @access public
 	 *
-	 * @uses			$commands
+	 * @uses		$commands
 	 *
 	 * @return bool		Returns FALSE on failure
 	 */
@@ -257,7 +257,7 @@ class main
 	 *
 	 * @access public
 	 *
-	 * @uses			$commands
+	 * @uses		$commands
 	 *
 	 * @return bool		Returns FALSE on failure
 	 */
@@ -289,7 +289,7 @@ class main
 	 *
 	 * @access public
 	 *
-	 * @uses			$commands
+	 * @uses		$commands
 	 *
 	 * @return bool		Returns FALSE on failure
 	 */
@@ -319,7 +319,7 @@ class main
 	 *
 	 * @access public
 	 *
-	 * @uses			$commands
+	 * @uses		$commands
 	 *
 	 * @return bool		Returns FALSE on failure
 	 */
